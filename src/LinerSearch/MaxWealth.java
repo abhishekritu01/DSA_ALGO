@@ -8,24 +8,22 @@ package LinerSearch;
 
 public class MaxWealth {
     static int maximumnWealth(int[][] accounts){
-
         int maxWealth =0;
+        for(int row =0; row<accounts.length; row++){
+            int sum = 0;
+            for(int col=0; col<accounts[row].length; col++){
+                sum += accounts[row][col];
 
-        for(int person=0; person < accounts.length ;person++){
-
-            int sum =0;
-            for(int account =0; account < accounts[person].length; account++){
-                sum = sum + accounts[person][account];
-            }
-            if(sum > maxWealth){
-                maxWealth = sum;
+                if(sum > maxWealth){
+                    maxWealth = sum;
+                }
             }
         }
         return maxWealth;
     };
 
     public static void main(String[] args) {
-        int[][] accounts = {{1,2,3},{3,2,1},{3,6,1}};
+        int[][] accounts = {{1,2,3},{3,12,1},{3,6,1}};
         System.out.println(maximumnWealth(accounts) + " " + "maximum wealth");
     }
 }

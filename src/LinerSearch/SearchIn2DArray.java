@@ -19,7 +19,8 @@ public class SearchIn2DArray {
 //    ----------------------Max in 2D array-----------------------------
 
     static int maxValue(int[][] arr) {
-        int max = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;       //value of Integer.MIN_VALUE is -2147483648
+        System.out.println(max + " is the initial value of max");
 
         for (int[] ints : arr) {
             for (int element : ints) {

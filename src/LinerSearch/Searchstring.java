@@ -19,7 +19,6 @@ public class Searchstring {
     }
 
     static boolean search(String name, char target) {
-
         if (name.isEmpty()) {
             return false;
         }
