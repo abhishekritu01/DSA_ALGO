@@ -9,12 +9,12 @@ package LinerSearch;
 public class MaxWealth {
     static int maximumnWealth(int[][] accounts){
         int maxWealth =0;
-        for(int row =0; row<accounts.length; row++){
+        for (int[] account : accounts) {
             int sum = 0;
-            for(int col=0; col<accounts[row].length; col++){
-                sum += accounts[row][col];
+            for (int i : account) {
+                sum += i;
 
-                if(sum > maxWealth){
+                if (sum > maxWealth) {
                     maxWealth = sum;
                 }
             }

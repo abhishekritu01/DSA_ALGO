@@ -3,6 +3,7 @@ package BinarySearch;
 
 //Input: nums = [5,7,7,8,8,10], target = 8
 // ------- Output: [3,4]
+//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 
 public class FirstandLastPostion {
 
@@ -50,7 +51,4 @@ public class FirstandLastPostion {
         }
         return ans;
     }
-
-
-
 }
